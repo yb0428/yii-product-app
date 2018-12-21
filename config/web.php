@@ -43,14 +43,21 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+    ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\adminModule',
+            'defaultRoute' => 'index',
+//            'IndexController' => 'welcome',
+//            'defaultAction' => 'welcome',
+        ],
     ],
     'params' => $params,
 ];
